@@ -34,25 +34,10 @@ public static class Mitra
 
         Initial = Regex.Replace(Initial, "[ıİ]", "I");
         //Initial.ToUpper(New CultureInfo("en-US", False))
-        if (Initial == "ADMINISTRATOR")
-        {
-            Initial = "TOZU";
-        }
-        if (Initial == "ADMINTOZU")
-        {
-            Initial = "TOZU";
-        }
-        if (Initial == "ENVER")
-        {
-            Initial = "TOZU";
-        }
-        if (Initial == "TOZU")
-        {
-            Initial = "FACA";
-        }
+       
         if (Initial == "KORKM")
         {
-            Initial = "TOZU";
+            Initial = "Taha";
         }
         if (!Mitra.IsDbNull(HttpContext.Current.Session))
         {
@@ -350,7 +335,7 @@ public static class Mitra
     /// Creates mail address from initial
     /// </summary>
     /// <param name="initial">mail user</param>
-    /// <returns>returns initial@novonordisk.com</returns>
+    /// <returns>returns initial@example.com</returns>
     public static string MakeEmail(string initial)
     {
         if (!Mitra.IsDbNull(initial))
@@ -374,7 +359,7 @@ public static class Mitra
                             }
                             else
                             {
-                                mailers += virgul + item + "@novonordisk.com"; virgul = ",";
+                                mailers += virgul + item + "@example.com"; virgul = ",";
                             }
                         }
                     }
@@ -388,7 +373,7 @@ public static class Mitra
                     }
                     else
                     {
-                        return initial + "@novonordisk.com";
+                        return initial + "@example.com";
                     }
                 }
 
