@@ -1,0 +1,78 @@
+﻿<!-- http://codepen.io/dprantzalos/pen/ojabgO -->
+<h1>An Alternative to Bootstrap Responsive Tables</h1>
+<p>
+    This example demonstrates an alternative approach to responsive tables than what <a href="http://getbootstrap.com/">Bootstrap</a>
+    offers. A Bootstrap 3 responsive table will introduce a horizontal scroll bar that allows you scroll to the right to see
+    the remaining content. The CSS in this example stacks the table columns vertically instead for each table row, which is
+    easier to read on devices in portrait mode. Clicking the button below will toggle between the Bootstrap CSS and my CSS.
+    Resize your browser to a size less than 768px wide and use the button below to toggle the effects.
+</p>
+<button id="toggle" type="button" class="btn btn-primary">Click to use My Table</button>
+<div id="data" class="jim-table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Official Name</th>
+                <th>Official Language</th>
+                <th>Capital</th>
+                <th>Currency</th>
+                <th>Population</th>
+                <th>Size/Area</th>
+                <th>Flag</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Country">Germany</td>
+                <td data-label="Official Name">Federal Republic of Germany</td>
+                <td data-label="Official Language">German</td>
+                <td data-label="Capital">Berlin</td>
+                <td data-label="Currency">Euro</td>
+                <td data-label="Population">80,854,408</td>
+                <td data-label="Size/Area">357,022 sq km</td>
+                <td data-label="Flag"><img src="https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gm-lgflag.gif" height="32" /></td>
+            </tr>
+            <tr>
+                <td data-label="Country">Ghana</td>
+                <td data-label="Official Name">Republic of Ghana</td>
+                <td data-label="Official Language">Asante, Ewe, Fante, other</td>
+                <td data-label="Capital">Accra</td>
+                <td data-label="Currency">Ghana cedi</td>
+                <td data-label="Population">26,327,649</td>
+                <td data-label="Size/Area">238,533 sq km</td>
+                <td data-label="Flag"><img src="https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gh-lgflag.gif" height="32" /></td>
+            </tr>
+            <tr>
+                <td data-label="Country">Greece</td>
+                <td data-label="Official Name">Hellenic Republic</td>
+                <td data-label="Official Language">Greek</td>
+                <td data-label="Capital">Athens</td>
+                <td data-label="Currency">Euro</td>
+                <td data-label="Population">10,775,643</td>
+                <td data-label="Size/Area">131,957 sq km</td>
+                <td data-label="Flag"><img src="https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gr-lgflag.gif" height="32" /></td>
+            </tr>
+            <tr>
+                <td data-label="Country">Greenland</td>
+                <td data-label="Official Name">Greenland</td>
+                <td data-label="Official Language">Greenlandic, Danish, English</td>
+                <td data-label="Capital">Nuuk</td>
+                <td data-label="Currency">Danish krone</td>
+                <td data-label="Population">57,733</td>
+                <td data-label="Size/Area">2,166,086 sq km</td>
+                <td data-label="Flag"><img src="https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gl-lgflag.gif" height="32" /></td>
+            </tr>
+            <tr>
+                <td data-label="Country">Guatemala</td>
+                <td data-label="Official Name">Republic of Guatemala</td>
+                <td data-label="Official Language">Spanish</td>
+                <td data-label="Capital">Guatemala City</td>
+                <td data-label="Currency">Quetzal</td>
+                <td data-label="Population">14,918,999</td>
+                <td data-label="Size/Area">108,889 sq km</td>
+                <td data-label="Flag"><img src="https://www.cia.gov/library/publications/the-world-factbook/graphics/flags/large/gt-lgflag.gif" height="32" /></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
